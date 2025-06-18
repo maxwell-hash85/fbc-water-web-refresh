@@ -5,6 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base: './', // ✅ This line tells Vite to use relative paths (important for Netlify!)
   server: {
     host: "::",
     port: 8080,
